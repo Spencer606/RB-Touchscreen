@@ -23,7 +23,7 @@ function displayFaculty(){
 	$output .= '
 	<div class="row">
 	';
-	if (($handle = fopen("CSV/faculty.csv", "r")) !== FALSE) {
+	if (($handle = fopen("faculty.csv", "r")) !== FALSE) {
 		while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
 			if($row%3==0){
 				$output .='

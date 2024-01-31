@@ -1,6 +1,6 @@
 <?php
 
-require 'functions/faculty_functions.php';
+require 'faculty_functions.php';
 
 echo '<!DOCTYPE html>
 <head>
