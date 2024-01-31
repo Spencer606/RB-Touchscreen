@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  
+}
+
+.btn {
+	font-size: 35px;
+	width: 120%;
+}
+.slide{
+	padding-left:3%
+}

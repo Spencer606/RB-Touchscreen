@@ -1,0 +1,42 @@
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+h1{
+	font-size: 55px;
+}
+
+img {
+	max-height: 500px;
+}
+button{
+	height: 100px;
+}
+
+
+/* Set Font */
+body{
+	font-family: 'Tillana', cursive;
+	
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
