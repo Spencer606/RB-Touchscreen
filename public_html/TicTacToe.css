@@ -1,0 +1,30 @@
+/*
+.square {
+  width: 7%;
+  margin: 1%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+ 
+}
+*/
+.square{
+width:110px;
+height:110px;
+font-size: 40pt;
+margin: 15px;
+
+}
+.green{
+	color: white;
+	background-color: green;
+}
+
+.container {
+  position: relative;
+  top: 50%;
+  transform: translateY(35%);
+}
