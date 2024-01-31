@@ -241,6 +241,7 @@ function displayStudentsWork(){
     foreach (scandir($directory) as $file) {
         if ('.' === $file) continue;
         if ('..' === $file) continue;
+				if ('Icon' === $file) continue;
 
         $files[] = $file;
     }
