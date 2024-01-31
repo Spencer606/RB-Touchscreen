@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="CSS/SlideShowCSS.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Tillana" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="CSS/buttons.css" rel="stylesheet" />
+<link href="CSS/HomeScreenCSS.css" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.css" />
+<link rel="stylesheet" href="CSS/global.css" />
+</head>
+
+<body>  
+<div class="container">
+
+<br>
+<div class="row">
+
+	 <div class="col-md-2">
+		<br><br><br>
+        <div class="row">
+            <div class="col-md-12">
+			<a href="faculty.php">
+				<button type="button" class="btn btn-fresh btn-success btn-block">Faculty</button>
+				<br>
+			</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+				<a href="Courses.php">
+                <button type="button" class="btn btn-fresh btn-success btn-block">Courses</button>
+				</a>
+				<br>
+            </div>
+        </div>
+		<!--div class="row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-default btn-success btn-block" disabled>Projects</button>
+				<br>
+            </div>
+        </div -->
+		
+		<div class="row">
+            <div class="col-md-12">
+                <a href="Games.html">
+				<button type="button" class="btn btn-fresh btn-success btn-block">
+				Games
+				</button>
+				</a>
+				<br>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 slide">
+        <div>
+			<div class="slideshow-container">
+			  <div class="mySlide">
+					<img id="curSlide" src="images/CSLogo.jpg" style="height: 600px; width: 700px; margin:5%; margin-top:0%" class="img-responsive center-block img-thumbnail">
+			  </div>
+			  
+			</div>
+			
+        </div>
+    </div>
+    <div class="col-md-2">
+		<br><br><br>
+        <div class="row">
+           
+            <div class="col-md-12">
+				<a href="Students.php?year=2018">
+                <button type="button" class="btn btn-fresh btn-success btn-block">Students</button>
+				</a>
+				<br>
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-md-12">
+				<a href="Clubs.html">
+                <button type="button" class="btn btn-fresh btn-success btn-block">Clubs</button>
+				</a>
+				<br>
+            </div>
+        </div>
+		 <div class="row">
+            <div class="col-md-12">
+				<a href="LatestUpdates.html">
+					<button type="button" class="btn btn-fresh btn-success btn-block"> News</button>
+				</a>
+				<br>
+            </div>
+        </div>
+		<!--div class="row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-default btn-success btn-block" disabled>Floor Map</button>
+				<br>
+            </div>
+        </div-->
+    </div>
+</div>
+
+</div>
+<script src="JavaScript/SlideShowJavaScript.js"></script>
+<script>
+//Home Screen right click menu
+$(function() {
+        $.contextMenu({
+            selector: 'html', 
+            callback: function(key, options) {
+                var m = "clicked: " + key;
+              
+            },
+            items: {
+                               
+                "quit": {name: "Quit", icon: function(){
+                    return 'context-menu-icon context-menu-icon-quit';
+                }}
+            }
+        });
+
+         
+    });
+</script>
+</body>

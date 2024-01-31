@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href = "CSS/navigationBar.css"/>
+<link rel="stylesheet" href = "CSS/TicTacToe.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="JavaScript/TicTacToeJS.js"></script>
+<script src="JavaScript/IdleTimeReset.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.css" />
+<link rel="stylesheet" href = "CSS/buttons.css"/><link rel="stylesheet" href="CSS/global.css" />
+<head>
+<body>
+<div class="container">
+	<div class="row">
+		<center><h1> Tic Tac Toe <h1></center>
+	</div>
+	<div class = "row">
+	<center><h3 id="curPlayer"> Player's Turn: X</h3></center>
+	</div>
+
+	<div class="row">
+		<!-- Row 1 -->
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<center><div class="col-sm-2 well square" id="0">  </div></center>
+			<center><div class="col-sm-2 well square" id="1">  </div></center>
+			<center><div class="col-sm-2 well square" id="2">  </div></center>
+			<div class="col-sm-2"></div>
+		</div>
+		<!-- Row 2 -->
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<center><div class="col-sm-2 well square" id="3">  </div></center>
+			<center><div class="col-sm-2 well square" id="4">  </div></center>
+			<center><div class="col-sm-2 well square" id="5">  </div></center>
+			<div class="col-sm-2"></div>
+		</div>
+		<!-- Row 3 -->
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<center><div class="col-sm-2 well square" id="6">  </div></center>
+			<center><div class="col-sm-2 well square" id="7">  </div></center>
+			<center><div class="col-sm-2 well square" id="8">  </div></center>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+	<div class="row">
+		<center><button id="resetButton" type="button" class="btn btn-hot" onclick="reset();">Reset</button></center>
+	</div>
+	</div>
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand homeButton" href="HomeScreen.html">
+				Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="Games.html">Games</a></li>
+			</ul>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a class="navbar-brand homeButton" href="HomeScreen.html">
+					Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+</body>
