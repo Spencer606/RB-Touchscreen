@@ -1,7 +1,7 @@
 <?php
 
 
-require 'functions/courses_functions.php';
+require 'courses_functions.php';
 
 echo '<!DOCTYPE html>
 <head>

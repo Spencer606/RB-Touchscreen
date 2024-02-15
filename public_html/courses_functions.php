@@ -15,7 +15,7 @@ function displayCourses(){
 	$output .= '
 	<div class="row">
 	';
-	if (($handle = fopen("CSV/courses.csv", "r")) !== FALSE) {
+	if (($handle = fopen("courses.csv", "r")) !== FALSE) {
 		while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
 			if($row%2==0){
 				$output.='

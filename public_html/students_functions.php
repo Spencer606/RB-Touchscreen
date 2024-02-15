@@ -42,7 +42,7 @@ function displayStudents($year){
 	$output .= '
 	<div class="row">
 	';
-	if (($handle = fopen("CSV/studentsCSV.csv", "r")) !== FALSE) {
+	if (($handle = fopen("studentsCSV.csv", "r")) !== FALSE) {
 		while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
 			if($data[1]==$year){
 				if($row%3==0){
