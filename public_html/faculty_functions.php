@@ -38,7 +38,7 @@ function displayFaculty(){
             // Displaying the Faculty Name and Title under the panel-heading
             $output .= '
                 <div class="panel-heading text-center">
-                    <h3>'.$data[0].'</h3>
+                    <h3 style="font-weight: bold;">'.$data[0].'</h3>
                     <h4>'.$data[1].'</h4>
                 </div>';
             // Displaying the Image if available
