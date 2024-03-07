@@ -16,6 +16,14 @@
 	  </div>
 
 */
+
+echo '<style>
+    .panel {
+        font-family: Cambria;
+		font-size: 20px;
+    }
+</style>';
+
 function displayFaculty(){
     $output = '';
 
@@ -52,10 +60,7 @@ function displayFaculty(){
             $output .= '
                 <div class="panel-footer">
                     <div class="text-center">';
-            // Displaying "Department Chair" if available
-            if(isset($data[6]) && !empty($data[6])) {
-                $output .= '<h4>Department Chair</h4>';
-            }
+            
             // Displaying additional information if available
             for ($i = 4; $i < count($data); $i++) {
                 if (!empty($data[$i])) {
