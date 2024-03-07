@@ -32,7 +32,8 @@ echo displayFaculty();
 
 echo '
 
-
+	<br>
+	<br>
 	<div class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="container-fluid">
 			<div class="navbar-header">
