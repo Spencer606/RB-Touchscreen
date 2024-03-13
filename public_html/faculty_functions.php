@@ -53,7 +53,7 @@ function displayFaculty(){
             if($data[2]!= ''){
                 $output .='
                 <div class="panel-body">
-                    <img src="images/faculty/'.$data[2].'" alt="'.$data[0].'" height="200" class="center-block img-rounded" >
+                    <img src="images/faculty/'.$data[2].'" alt="'.$data[0].'" height="200" class="center-block img-rounded " >
                 </div>';
             }
             // Displaying the Panel Footer
