@@ -1,54 +1,198 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
-<link rel="stylesheet" href = "CSS/navigationBar.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="JavaScript/IdleTimeReset.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.css" />
-<link rel="stylesheet" href="CSS/global.css" />
-<link rel="stylesheet" href= "CSS/buttons.css">
-<head>
-<body>
-<div class="container">
-<div class="row">
-	<center><h1> Games <h1></center>
-</div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department Highlights</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="CSS/navigationBar.css"/>
+    <link rel="stylesheet" href="CSS/global.css" />
+	<style>
+		/* Add your custom CSS for image grid layout here */
+		.image-grid {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			gap: 20px; 
+			list-style: none;
+			padding: 0; 
+			margin-bottom: 70px;
+		}
 	
-	<div class="row">
-		<div class="col-sm-8 text-center col-sm-offset-2">
-		<a href="TicTacToe.html"><button id="resetButton" type="button" class="btn btn-sky btn-lg btn-block" style="height:80px">TicTacToe</button></a>
-		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div class="col-sm-8 text-center col-sm-offset-2">
-		<a href="Trivia.php"><button type="button" class="btn btn-sky btn-lg btn-block" style="height:80px">Trivia by Dr. Lim</button></a>
-		</div>
-	</div>
-<div class="navbar navbar-inverse navbar-fixed-bottom">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand homeButton" href="HomeScreen.html">
-				Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-			</a>
-		</div>
-		<ul class="nav navbar-nav">		  
-		  <!--<li><a href="#news">News</a></li>
-		  <li><a href="#contact">Contact</a></li>
-		  <li><a href="#about">About</a></li>
-		  -->
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li>
-				<a class="navbar-brand homeButton" href="HomeScreen.html">
-					Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
+		.image-grid-item {
+			overflow: hidden;
+			border-radius: 10px;
+			
+			flex: 0 0 calc(25% - 20px); 
+			max-width: calc(25% - 20px); 
+			margin-bottom: 20px; 
+		}
+	
+		.image-grid-item img {
+			width: 100%;
+			height: auto;
+			max-height: 400px; /* Set a maximum height for the images */
+			object-fit: contain; /* Ensure the entire image fits within the container */
+		}
+	
+		/* Center the "Games" heading */
+		.highlights-heading {
+			text-align: center;
+			margin-bottom: 20px; /* Add some space below the heading */
+		}
+	</style>
+	
+	
+	
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="highlights-heading">Computer Science Department Highlights</h1>
+        </div>
 
-</div>
+        <ul class="image-grid">
+            <li class="image-grid-item">
+                <img src="images/randomPics/pics1.jpg" alt="Imgae 1">
+            </li>
+            <li class="image-grid-item">
+                <img src="images/randomPics/pics2.jpg" alt="Image 2">
+            </li>
+            <li class="image-grid-item">
+                <img src="images/randomPics/pics3.jpg" alt="Image 3">
+            </li>
+            <li class="image-grid-item">
+                <img src="images/randomPics/pics4.jpg" alt="Image 4">
+            </li>
+            <li class="image-grid-item">
+                <img src="images/randomPics/pics5.jpg" alt="Image 5">
+            </li>
+            <li class="image-grid-item">
+                <img src="images/randomPics/pics6.jpg" alt="Image 6">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics7.jpg" alt="Image 7">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics8.jpg" alt="Image 8">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics9.jpg" alt="Image 9">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics10.jpg" alt="Image 10">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics11.jpg" alt="Image 11">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics12.jpg" alt="Image 12">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics13.jpg" alt="Image 13">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics14.jpg" alt="Image 14">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics15.jpg" alt="Image 15">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics16.jpg" alt="Image 16">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics17.jpg" alt="Image 17">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics18.jpg" alt="Image 18">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics19.jpg" alt="Image 19">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics20.jpg" alt="Image 20">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics21.jpg" alt="Image 21">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics22.jpg" alt="Image 22">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics23.jpg" alt="Image 23">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics24.jpg" alt="Image 24">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics25.jpg" alt="Image 25">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics26.jpg" alt="Image 26">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics27.jpg" alt="Image 27">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics28.jpg" alt="Image 28">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics29.jpg" alt="Image 29">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics30.jpg" alt="Image 30">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics31.jpg" alt="Image 31">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics32.jpg" alt="Image 32">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics33.jpg" alt="Image 33">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics34.jpg" alt="Image 34">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics35.jpg" alt="Image 35">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics36.jpg" alt="Image 36">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics37.jpg" alt="Image 37">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics38.jpg" alt="Image 38">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics39.jpg" alt="Image 39">
+            </li>
+			<li class="image-grid-item">
+                <img src="images/randomPics/pics40.jpg" alt="Image 40">
+            </li>
+        </ul>
 
+        <div class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand homeButton" href="HomeScreen.html">
+                        Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                   
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="navbar-brand homeButton" href="HomeScreen.html">
+                            Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
