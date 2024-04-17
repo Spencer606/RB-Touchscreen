@@ -16,6 +16,12 @@ echo '<!DOCTYPE html>
 <link rel="stylesheet" href="CSS/global.css" />
 <title>Student Page</title>
 </head>
+<style>
+   
+    body {
+        background-color: beige; 
+	}
+</style>
 <body>
 
 <div class="container">

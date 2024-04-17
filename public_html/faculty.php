@@ -15,12 +15,18 @@ echo '<!DOCTYPE html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.css" />
 <link rel="stylesheet" href="CSS/global.css" />
 <title>Faculty Page</title>
+<style>
+   
+    body {
+        background-color: beige; 
+	}
+</style>
 </head>
 <body>
 
 <div class="container">
 	<div class="row">
-			<center><h1> Faculty </h1></center>
+			<center><h1> Meet the Computer Science Faculty </h1></center>
 		</div>
 		<hr><br><br>
 

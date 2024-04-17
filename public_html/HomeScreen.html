@@ -8,11 +8,59 @@
 <link href="CSS/HomeScreenCSS.css" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.css" />
 <link rel="stylesheet" href="CSS/global.css" />
+
+<style>
+    body {
+            background-color: beige; 
+        }
+
+    .btn-lg {
+        padding: 40px 50px 60px; 
+        font-size: 22px; 
+        background-color: #006B54;
+        color: #FCC917;
+        margin-bottom: 10px;
+        width: 100%;
+        font-family: 'Merriweather', serif;
+    }
+
+    .btn-lg:hover {
+            background-color: #FCC917; 
+           
+        }
+
+     .banner {
+            background-color: #FCC917; 
+            color: #006B54; 
+            padding: 20px; 
+            text-align: center; 
+            margin-top: 20px;
+            
+        }
+
+     .banner h1 {
+            margin-top: 10px; 
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+        
+        }
+
+      
+     .logo {
+            max-width: 100px; /* Adjust the size of the logo */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: 10px; /* Add some space above the logo */
+        }
+</style>
+
 </head>
 
 <body>  
 <div class="container">
-
+    <div class="banner">
+        <h1>Welcome to the Computer Science Department!</h1>
+        <img src="siena_logo.png" alt="Siena College Logo" class="logo">
+    </div>
 <br>
 <div class="row">
 
@@ -21,7 +69,7 @@
         <div class="row">
             <div class="col-md-12">
 			<a href="faculty.php">
-				<button type="button" class="btn btn-fresh btn-success btn-block">Faculty</button>
+				<button type="button" class="btn btn-fresh btn-success btn-lg btn-block">Faculty</button>
 				<br>
 			</a>
             </div>
@@ -29,22 +77,16 @@
         <div class="row">
             <div class="col-md-12">
 				<a href="Courses.php">
-                <button type="button" class="btn btn-fresh btn-success btn-block">Courses</button>
+                <button type="button" class="btn btn-fresh btn-success btn-lg btn-block">Courses</button>
 				</a>
 				<br>
             </div>
         </div>
-		<!--div class="row">
-            <div class="col-md-12">
-                <button type="button" class="btn btn-default btn-success btn-block" disabled>Projects</button>
-				<br>
-            </div>
-        </div -->
 		
 		<div class="row">
             <div class="col-md-12">
                 <a href="Games.html">
-				<button type="button" class="btn btn-fresh btn-success btn-block">
+				<button type="button" class="btn btn-fresh btn-success btn-lg btn-block">
 				Images
 				</button>
 				</a>
@@ -55,11 +97,11 @@
     <div class="col-md-8 slide">
         <div>
 			<div class="slideshow-container">
-			  <div class="mySlide">
-					<img id="curSlide" src="CSLogo.jpg" style="height: 600px; width: 700px; margin:5%; margin-top:0%" class="img-responsive center-block img-thumbnail">
-			  </div>
-			  
-			</div>
+                <div class="mySlide">
+                    <img id="curSlide" src="CSLogo.jpg" style="max-width: 500px; max-height: 500px; display: block; margin-top: 30px;" class="img-responsive center-block img-thumbnail">
+                </div>
+            </div>
+            
 			
         </div>
     </div>
@@ -69,7 +111,7 @@
            
             <div class="col-md-12">
 				<a href="Students.php?year=2018">
-                <button type="button" class="btn btn-fresh btn-success btn-block">Students</button>
+                <button type="button" class="btn btn-fresh btn-success btn-lg btn-block">Students</button>
 				</a>
 				<br>
             </div>
@@ -78,7 +120,7 @@
            
             <div class="col-md-12">
 				<a href="Clubs.html">
-                <button type="button" class="btn btn-fresh btn-success btn-block">Clubs</button>
+                <button type="button" class="btn btn-fresh btn-success btn-lg btn-block">Clubs</button>
 				</a>
 				<br>
             </div>
@@ -86,17 +128,12 @@
 		 <div class="row">
             <div class="col-md-12">
 				<a href="LatestUpdates.html">
-					<button type="button" class="btn btn-fresh btn-success btn-block"> News</button>
+					<button type="button" class="btn btn-fresh btn-success btn-lg btn-block"> News</button>
 				</a>
 				<br>
             </div>
         </div>
-		<!--div class="row">
-            <div class="col-md-12">
-                <button type="button" class="btn btn-default btn-success btn-block" disabled>Floor Map</button>
-				<br>
-            </div>
-        </div-->
+	
     </div>
 </div>
 
