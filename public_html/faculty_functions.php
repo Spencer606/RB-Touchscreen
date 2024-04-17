@@ -22,11 +22,6 @@ echo '<style>
         font-family: Cambria;
 		font-size: 20px;
     }
-	
-    body {
-        background-color: beige; 
-	}
-
 
 
 </style>';
