@@ -171,7 +171,7 @@ function addNavBar(){
                 </li>
                 <li>
                     <a href="studentCompanies.php">
-                        Where Students Go
+                        Where Students Work
                     </a>
                 </li>
             </ul>
@@ -191,41 +191,46 @@ function addNavBar(){
 /**
  * Goes through and displays all the companies logos
  */
-function displayStudentsWork(){
+/**
+ * Display students' work with their name, company name, company logo, and class year.
+ */
+
+ function displayStudentsWork(){
     $output = '';
 
-    $directory = getcwd() . '/images/CompanyLogos/';
-    if (! is_dir($directory)) {
-        exit('Invalid directory path');
-    }
+    // Open CSV file
+    if (($handle = fopen("studentsCSV.csv", "r")) !== FALSE) {
+        // Loop through each row in the CSV file
+        while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+            // Check if the row has the required data
+            if (count($data) >= 5) {
+                // Extract data
+                $studentName = $data[0];
+                $classYear = $data[1];
+                $companyName = $data[3];
+                $companyLogo = $data[4];
 
-    $files = array();
-
-    // Get list of images
-    foreach (scandir($directory) as $file) {
-        if ('.' === $file) continue;
-        if ('..' === $file) continue;
-        if ('Icon' === $file) continue;
-
-        $files[] = $file;
-    }
-
-    $count = 0;
-    $output .= '<div class="row">';
-
-    foreach ($files as $file) {
-        if ($count % 4 == 0) {
-            $output .= '</div><br><br><div class="row">';
+		
+                $output .= '<div class="col-md-4" style="display: flex;height: 350px;">';
+                $output .= '<div class="thumbnail" style = "background-color: #CFC9C4;">';
+                $output .= '<img src="images/CompanyLogos/' . $companyLogo . '" alt="' . $companyName . '" style="width: 95%; height: auto; margin-top: 20px">';
+                $output .= '<div class="caption">';
+                $output .= '<h4 style = "font-family: Cambria; font-size: 28px; font-weight: bold; color: #006B54">' . $studentName . '</h4>';
+                $output .= '<p style = "color:#006B54;font-family: Cambria; font-size: 18px;"><strong>Company:</strong> ' . $companyName . '</p>';
+                $output .= '<p style = "color:#006B54;font-family: Cambria; font-size: 18px;"><strong>Class Year:</strong> ' . $classYear . '</p>';
+                $output .= '</div></div></div>';
+		
+            }
         }
-        $output .= '<div class="col-md-3">';
-        $output .= '<img src="images/CompanyLogos/' . $file . '" alt="" style="max-width:100%;" class="center-block">';
-        $output .= '</div>';
-        $count++;
+        fclose($handle);
+    } else {
+        exit('Error opening CSV file');
     }
 
-    $output .= '</div>';
+	$output .= '<div class="col-md-12" style="margin-bottom: 50px;"></div>';
 
-    return $output;
+    // Display the output
+    echo $output;
 }
 
 ?>

@@ -15,12 +15,24 @@ echo '<!DOCTYPE html>
 <link rel="stylesheet" href="CSS/global.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.css" />
 <title>Student Work Page</title>
+
+<style>
+.row h1 {
+	font-family: \'Merriweather\', serif;
+	font-weight: bold;
+	color: #006B54;
+}
+
+body {
+	background-color: beige;
+}
+</style>
 </head>
 <body>
 
 <div class="container">
 	<div class="row">
-			<center><h1> Where Students Go</h1></center>
+			<center><h1> Where Students Work</h1></center>
 		</div>
 		<hr><br><br>
 
