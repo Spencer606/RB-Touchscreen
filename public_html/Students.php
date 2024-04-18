@@ -19,7 +19,7 @@ echo '<!DOCTYPE html>
 
 <div class="container">
 	<div class="row">
-			<center><h1> Students - '.$_GET['year'].'</h1></center>
+			<center><h1> Meet the Students: Class of '.$_GET['year'].'</h1></center>
 		</div>
 		<hr><br><br>
 

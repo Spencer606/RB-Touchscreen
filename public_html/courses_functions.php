@@ -27,7 +27,7 @@ function displayCourses(){
 			$output .= '
 		<div class="col-md-6">
 			<div class="panel panel-default">
-			  <div class="panel-heading text-center">
+			  <div class="panel-heading text-center" style = "background-color: #006B54;  color: #FCC917; font-family: Cambria;">
 			  <h3>'.$data[1].'</h3>
 			  <h4>'.$data[0]. '  -  '.$data[3].'</h4>';
 			  if($data[2]!=''){
@@ -36,7 +36,7 @@ function displayCourses(){
 			  }
 			  $output.='
 			  </div>
-			  <div class="panel-body">'.$data[4].'</div>
+			  <div class="panel-body" style = "background-color: #CFC9C4; font-family: Cambria; color: #006B54; font-weight: bold; font-size: 17px;">'.$data[4].'</div>
 			</div>
 		</div>
 			';

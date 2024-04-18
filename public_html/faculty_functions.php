@@ -22,9 +22,14 @@ echo '<style>
         font-family: Cambria;
 		font-size: 20px;
     }
+    
+    .panel {
+        background-color: red;
+    }
 
-
+    
 </style>';
+
 
 function displayFaculty(){
     $output = '';
@@ -47,20 +52,20 @@ function displayFaculty(){
                 <div class="panel panel-default">';
             // Displaying the Faculty Name and Title under the panel-heading
             $output .= '
-                <div class="panel-heading text-center">
+                <div class="panel-heading text-center"  style = "background-color: #006B54;  color: #FCC917;" >
                     <h3 style="font-weight: bold;">'.$data[0].'</h3>
-                    <h4>'.$data[1].'</h4>
+                    <h4 style="font-size: 15px;">'.$data[1].'</h4>
                 </div>';
             // Displaying the Image if available
             if($data[2]!= ''){
                 $output .='
-                <div class="panel-body">
+                <div class="panel-body"  style = "background-color: #CFC9C4;">
                     <img src="images/faculty/'.$data[2].'" alt="'.$data[0].'" height="200" class="center-block img-rounded " >
                 </div>';
             }
             // Displaying the Panel Footer
             $output .= '
-                <div class="panel-footer">
+                <div class="panel-footer" style = "background-color: #006B54;  color: #FCC917">
                     <div class="text-center">';
             
             // Displaying additional information if available

@@ -21,12 +21,18 @@ echo '<!DOCTYPE html>
     body {
         background-color: beige; 
 	}
+
+	.row h1 {
+		font-family: \'Merriweather\', serif;
+		font-weight: bold;
+		color: #006B54;
+	}
 </style>
 <body>
 
 <div class="container">
 	<div class="row">
-			<center><h1> Take a Course in Computer Science! </h1></center>
+			<center><h1> Fall 2024 Computer Science Courses </h1></center>
 	</div>
 		<hr><br><br>
 

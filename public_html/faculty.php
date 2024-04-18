@@ -20,6 +20,12 @@ echo '<!DOCTYPE html>
     body {
         background-color: beige; 
 	}
+
+	.row h1 {
+		font-family: \'Merriweather\', serif;
+		font-weight: bold;
+		color: #006B54;
+	}
 </style>
 </head>
 <body>
