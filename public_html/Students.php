@@ -14,6 +14,18 @@ echo '<!DOCTYPE html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.4.3/jquery.contextMenu.css" />
 <link rel="stylesheet" href="CSS/global.css" />
 <title>Student Page</title>
+
+<style>
+body {
+	background-color: beige;
+}
+
+.row h1 {
+	font-family: \'Merriweather\', serif;
+	font-weight: bold;
+	color: #006B54;
+}
+</style>
 </head>
 <body>
 

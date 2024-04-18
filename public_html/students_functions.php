@@ -53,8 +53,8 @@ function displayStudents($year) {
                 }
                 $row++;
                 $output .= '<div class="col-md-4">';
-                $output .= '<div class="panel panel-default">';
-                $output .= '<div class="panel-footer text-center">';
+                $output .= '<div class="panel panel-default" style = "background-color: #CFC9C4;">';
+                $output .= '<div class="panel-footer text-center"style = "background-color: #006B54; font-family: Cambria; color: #FCC917;">';
                 $output .= '<h3>' . $data[0] . '</h3>';
                 $output .= '</div>';
                 if (!empty($data[2])) {
@@ -145,6 +145,9 @@ function addNavBar(){
     $output = '';
 
     $output .= '
+	<br>
+	<br>
+	<br>
     <div class="navbar navbar-inverse navbar-fixed-bottom">
         <div class="container-fluid">
             <div class="navbar-header">
