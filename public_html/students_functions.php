@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+
 <?php
 
 function printCSV(){
@@ -47,8 +58,8 @@ function displayStudents($year) {
                 $output .= '<h3>' . $data[0] . '</h3>';
                 $output .= '</div>';
                 if (!empty($data[2])) {
-                    $output .= '<div class="panel-body">';
-                    $output .= '<img src="images/students/' . $data[2] . '" alt="" height="500" class="center-block img-rounded">';
+                    $output .= '<div class="panel-body" style="height: 450px; overflow: hidden;">';
+                    $output .= '<img src="images/students/' . $data[2] . '" alt="" height="400" width="300" class="center-block img-rounded">';
                     $output .= '</div>';
                 }
                 $output .= '</div></div>';
@@ -215,3 +226,6 @@ function displayStudentsWork(){
 }
 
 ?>
+
+</body>
+</html>
