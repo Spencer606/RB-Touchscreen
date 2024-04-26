@@ -50,8 +50,8 @@ function displayProjects() {
             $image = trim($fields[2]);
 
             $output .= '<div class="col-md-4">';
-            $output .= '<div class="project-box">';
-            $output .= '<h4>' . $title . '</h4>';
+            $output .= '<div class="project-box" style="background-color: #CFC9C4; font-family: Cambria; color: #006B54;  font-size: 17px; font-weight: bold;">';
+            $output .= '<h4 style = "font-weight: bold";>' . $title . '</h4>';
             $output .= '<p>' . $course . '</p>';
             $output .= '<img src="' . $image . '" alt="' . $title . '" class="img-thumbnail custom-img">';
             $output .= '</div>';
@@ -63,6 +63,31 @@ function displayProjects() {
 
     return $output;
 }
+
+echo '
+
+	<br>
+	<br>
+    <br>
+	<div class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand homeButton" href="HomeScreen.html">
+					Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a class="navbar-brand homeButton" href="HomeScreen.html">
+					Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				</a>
+			</li>
+		</ul>
+		</div>
+	</div>
+
+</div>
+</body>';
 
 ?>
 
